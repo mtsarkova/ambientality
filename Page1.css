@@ -6,8 +6,11 @@ li {
 li a {
   color: lightblue;
   }
+    body {
+  background: url("https://blog.nationalgeographic.org/wp-content/uploads/2013/04/NationalGeographic_1329449-768x507.jpg");
   background-position: center;
   background-size: cover;
+}
  h1 {
    font-size: 20px
  }
