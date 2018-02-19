@@ -1,0 +1,13 @@
+li {
+  background: rgba(0,0,0,0.5);
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+li a {
+  color: lightblue;
+  }
+  background-position: center;
+  background-size: cover;
+ h1 {
+   font-size: 20px
+ }
