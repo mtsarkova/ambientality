@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
-<title> Cold Ice UK</title>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+<title> Cold Ice UK </title>
 <link rel="stylesheet" type="text/css" href="Page1.css"/>
 </head>
 <body>
@@ -12,6 +14,78 @@
     <li><a href="#News">Media</a></li>
     <li><a href="#Get Involved">Get Involved</a></li>
 </header>
-<article>
-</article>
+
+<!-- Slideshow -->
+
+  <div class="slideshow">
+    <div class="mySlides">
+      <img src="home_page6.jpg" style="width:100%">
+      <div class="text">3 out of 7 die every day</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="home_page5.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="home_page7.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!-- Sponsors -->
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
