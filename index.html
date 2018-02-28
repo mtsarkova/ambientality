@@ -3,69 +3,143 @@
 
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="Page1.css"/>
-  <link href='bootstrap-social/bootstrap-social.css' rel='stylesheet'>
-    <link href='icons/css/fontawesome-all.css' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title> Cold Ice UK </title>
+
 </head>
+
 <body>
 <header>
   <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Cold Ice</a>
+      <a class="navbar-brand" href="index.html">Cold Ice</a>
     </div>
     <li><a href="#About us">Who we are</a></li>
     <li><a href="#Our Work">What we do</a></li>
-    <li><a href="#Regulations">Campaigns</a></li>
-    <li><a href="#News">Media</a></li>
-  <button class="btn btn-danger navbar-btn">Get Involved</button>
+    <li><a href="#Our Campaigns">Campaigns</a></li>
+    <li><a href="media.html">Media</a></li>
+  <div class="pull-right"><button class="btn btn-danger navbar-btn">Get Involved</button></div>
+</div>
 </header>
 
-<div class='container'>
+<div class='container-fluid'>
 <div class='jumbotron'>
   <div class="row">
     <div class="col-sm-8">
 <h1> Let's stop the Earth Refridgiration now! </h1>
 </div>
 <div class="col-sm-4">
-  <img src='home_page5.jpg' class='img-responsive'>
+  <!--img src='images/weather.png' class='img-responsive'-->
 </div>
 </div>
-
-<nav class="navbar navbar-inverse">
-  <ul class="nav navbar-nav">
-  <li><a href="#Causes">Fossil Fuels</a></li>
-  <li><a href="#Causes">Farming</a></li>
-  <li><a href="#Causes">Deforistation</a></li>
-</nav>
-
 
 <div id=problems>
     <article>
       We aim to spread the knowledge about the global warming and consequencies it is going to bring to an everyday life.
-      One person can make a difference. Join our campaigns supporting the research and flora and fauna of Antarctica!
+      One person can make a difference. Join our campaigns supporting research expeditions of Antarctica's flora and fauna!
     </article>
 </div>
+<!--slides-->
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/home_page2.jpg" alt="Earth" style="width:100%;">
+      </div>
 
+      <div class="item">
+        <img src="images/home_page8.jpg" alt="polar Bear" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/home_page1.jpeg" alt="Antarktica" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#FossilFuels">Fossil Fuels</a></li>
+    <li><a data-toggle="tab" href="#Deforestation">Deforestation</a></li>
+    <li><a data-toggle="tab" href="#Farming">Farming</a></li>
+  </ul>
+
+  <div class="tab-content">
+        <div id="FossilFuels" class="tab-pane fade">
+      <h3>Fossil Fuels</h3>
+      <p>Burning fossil fuels puts carbon into the atmosphere. Other smaller sources include industrial processes such as cement manufacture and natural gas flaring. Fossil fuels provide most of the energy that supports human transportation, electricity production, heating and cooling of buildings, and industrial activity. Oil used to be the dominant fossil fuel, but as of 2008, coal is dominant (40% to oil’s 37%).
+        Burning all of the world’s reserves of fossil fuels such as coal, oil and gas could heat up the Earth enough to melt the entirety of Antarctica, driving sea levels catastrophically high, a new study warns.
+The Antarctic Ice Sheet, the largest ice cap on Earth, stores the equivalent of 58 meters (close to 200 feet) of water in terms of global sea level rise. Should it all melt, cities such as New York, Tokyo and Shanghai would all be submerged.
+“Burning the currently attainable fossil fuel resources is sufficient to eliminate the ice sheet,” the study, published in Science Advances on Friday, said.
+The good news is that such an event would not happen overnight. It would likely take as much as tens of thousands of years before Antarctica became ice-free.
+</p>
+
+      <img src='images/weather.png'class='img-responsive'</p>
+    </div>
+    <div id="Deforestation" class="tab-pane fade">
+      <h3>Deforestation</h3>
+      <p>Forests cover 31% of the land area on our planet. They produce vital oxygen and provide homes for people and wildlife. Many of the world’s most threatened and endangered animals live in forests, and 1.6 billion people rely on benefits forests offer, including food, fresh water, clothing, traditional medicine and shelter.
+        Forests play a critical role in mitigating climate change because they act as a carbon sink—soaking up carbon dioxide that would otherwise be free in the atmosphere and contribute to ongoing changes in climate patterns. Deforestation undermines this important carbon sink function. It is estimated that 15% of all greenhouse gas emissions are the result of deforestation.</p>
+    </div>
+    <div id="Farming" class="tab-pane fade">
+      <h3>Farming</h3>
+      <p>Most farm-related emissions come in the form of methane (CH4) and nitrous oxide (N2O). Cattle belching (CH4) and the addition of natural or synthetic fertilizers and wastes to soils (N2O) represent the largest sources, making up 65 percent of agricultural emissions globally. Smaller sources include manure management, rice cultivation, field burning of crop residues, and fuel use on farms. At the farm level, the relative size of different sources will vary widely depending on the type of products grown, farming practices employed, and natural factors such as weather, topography, and hydrology.</p>
+    </div>
+  </div>
+</div>
+<br>
 <div id=collaboration>
+  <h2> Partnerships </h2>
+  <h4> Each and every environment conservation organization is concerned about the Antarctics. Check out our partners achievements and visions. </h4>
+<br>
     <div class="row">
+      <div class="col-sm-4">
+        <a href="https://www.wwf.org.uk/where-we-work/places/antarctic">
+        <img src='images/wwf.png'>
+      </a>
+      </div>
         <div class="col-sm-4">
-          <img src='nrdc.png'>
+            <a href="https://www.unenvironment.org/explore-topics/sustainable-development-goals">
+          <img src='images/nrdc.png'>
+            </a>
         </div>
         <div class="col-sm-4">
-          <img src='wwf.png'>
-        </div>
-        <div class="col-sm-4">
-          <img src='un.png'>
+          <a href="https://www.unenvironment.org/explore-topics/sustainable-development-goals">
+          <img src='images/un.png'>
+        </a>
         </div>
       </div>
 </div>
 
+<form>
+  <br>
+    <div class="input-group input-group-sm">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+<br>
 <!--Buttons-->
-<footer>
+
 <div id='social-buttons'>
+
   <a class="btn btn-social-icon btn-twitter">
       <span class="fa fa-twitter"></span>
   </a>
@@ -76,7 +150,5 @@
             <span class="fa fa-instagram"></span>
    </a>
   </div>
-</footer>
-
 
 </body>

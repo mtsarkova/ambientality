@@ -1,11 +1,20 @@
 li {
   display: inline;
-  padding: 0px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
 }
 li a {
   color: LightSkyBlue;
-  }
+  padding: 10px 10px 20px 10px;
+  text-align: center;
 
+  display: inline-grid;
+  font-size: 18px;
+}
+.navbar-brand {
+text-decoration-color: LightSkyBlue;
+font-size: 30px;
+}
 .btn btn-danger navbar-btn {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -13,7 +22,6 @@ li a {
    font-size: 50px;
    color: LightSkyBlue;
    height: 100%;
-     background-image: url("home_page6.jpg");
   }
   .navbar navbar-inverse {
     width:100%;
@@ -21,22 +29,41 @@ li a {
   }
 body {
   height:100%;
- width:100%;
-   background-image:url(home_page6.jpg);/*your background image*/
-   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
-   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
-   /*css hack for ie*/
-   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.home_page6.jpg',sizingMethod='scale');
-   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='home_page6.jpg',sizingMethod='scale')";
-    background:Azure;
-    background-size: 100% 400%;
-    -webkit-background-size: cover;
-     color: LightSkyBlue;
-     font-family: 'Josefin Sans', sans-serif;
+  width:100%;
+  background-image:url(images/home_page6.jpg);
+  background-repeat:no-repeat;
+  background-size: 100% 400%;
+  -webkit-background-size: cover;
+  color: Black;
+  font-family: 'Oswald', sans-serif;
+}
+#collaboration {
+  padding: 10px 40px 100px 100px;
 }
 #collaboration img {
 max-height: 150px;
 max-width: 200px;
 width: 100px;
 height: 120px;
+}
+.tab-content {
+  color: black;
+}
+/*for media.html*/
+div.gallery {
+    margin: 5px;
+    border: 10px solid black;
+    float: left;
+    width: 500px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
